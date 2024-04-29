@@ -6,7 +6,7 @@ from telebot import types
 import threading
 import time
 
-from database.admin_functions import create_connection, get_all_validations
+from database.admin_functions import create_connection, get_all_validations, execute_run_once_sql
 from datetime import datetime, timedelta
 
 from database.standart_functions.add_validation import add_validation_for_user
@@ -367,5 +367,6 @@ def create_single_notification_thread(task_id, date_time_str, task_name, user_id
 
 
 if __name__ == "__main__":
+    execute_run_once_sql()
     create_notifications_threads()
     bot.polling(none_stop=True)

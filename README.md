@@ -1,7 +1,11 @@
-# Python bot schedule tracker
+# Python bot tasks tracker
 
-## Запуск контейера с db
+## Установка postgreSQL
+### Создание базы данных
 
-`docker build -t my_postgres .`
+Заполните переменные в файле /src/bot/config_bot.ini
 
-`docker run -d --name my_postgres_container -p 5432:5432 my_postgres`
+База данных должна быть поделючена к среде разработки (на пример pyCharm)
+
+Токен для бота генерируется с помошью тг бота https://t.me/BotFather
+

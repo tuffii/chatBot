@@ -70,3 +70,4 @@ def get_all_validations():
     except Exception as e:
         print("Error fetching validations:", e)
         return None
+
