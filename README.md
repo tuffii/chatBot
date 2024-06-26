@@ -1,6 +1,6 @@
 # Python bot tasks tracker
 
-## Установка postgreSQL
+### Установка postgreSQL
 ### Создание базы данных
 
 Заполните переменные в файле /src/bot/config_bot.ini
